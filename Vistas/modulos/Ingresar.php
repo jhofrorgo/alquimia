@@ -24,10 +24,10 @@
       </div>
 
       <?php
-
+      /*
       $inicio = new UsuariosC();
       $inicio -> IniciarSesionC();
-
+      */
       ?>
 
     </form>
