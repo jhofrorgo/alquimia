@@ -37,24 +37,38 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition skin-red-light sidebar-mini login-page">
-<div class="wrapper">
-
-<?php
-
-    
-    include "modulos/cabecera.php";
-    include "modulos/menu.php";
-
-?>
-
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
 
 
-    <!-- Main content -->
-    <!-- /.content -->
-  </div>
-</div>
+    <?php
+
+      session_start();
+      if(isset($_SESSION["Ingresar"]) && $_SESSION["Ingresar"] == true){
+        echo '<div class="wrapper"> ';
+              include "modulos/cabecera.php";
+              include "modulos/menu.php";
+
+              if(isset($_GET["url"])){
+                $url = $_GET["url"];
+                if($url == "Inicio" || $url == "Salir" || $url == "Perfil" || $url == "Usuarios" || 
+                  $url == "Categorias" || $url == "Comidas" || $url == "Editar-Comida" 
+                  || $url == "Mesa" || $url == "Orden"){
+                  include "modulos/".$url.".php";
+                }
+              }else{
+                include "modulos/Inicio.php";
+              }
+
+        echo "</div>";
+        //echo '<div class="content-wrapper"></div></div>';
+      }else{
+        include "modulos/ingresar.php";
+
+      }
+    ?>
+
+
+  
+
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->

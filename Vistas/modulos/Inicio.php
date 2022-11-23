@@ -15,9 +15,7 @@
 		<div class="row M">
 
 			<?php
-		
-			
-			/*
+
 			$resultado = MesasC::VerMesasC();
 
 			foreach ($resultado as $key => $value) {
@@ -57,7 +55,7 @@
 				
 
 			}
-*/
+
 			?>
 			
 
@@ -130,8 +128,8 @@
 
 
 <?php
-/*
-$Borrassr = new MesasC();
+
+$Borrar = new MesasC();
 $Borrar -> BorrarMesaC();
-*/
+
 ?>

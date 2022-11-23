@@ -22,14 +22,12 @@
         </div>
         <!-- /.col -->
       </div>
-
       <?php
-      /*
-      $inicio = new UsuariosC();
-      $inicio -> IniciarSesionC();
-      */
-      ?>
 
+        $inicio = new UsuariosC();
+        $inicio -> IniciarSesionC();
+
+        ?>
     </form>
 
   </div>
