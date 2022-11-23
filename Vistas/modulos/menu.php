@@ -26,12 +26,12 @@
         </li>
 
         <li>
-          <a href="#">
+          <a href="?url=Inicio">
             <i class="fa fa-home"></i> <span>Inicio</span>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="?url=Usuarios">
             <i class="fa fa-users"></i> <span>Usuarios</span>
           </a>
         </li>
@@ -44,8 +44,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Categorías</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Menú</a></li>
+            <li><a href="?url=Categorias"><i class="fa fa-circle-o"></i> Categorías</a></li>
+            <li><a href="?url=Comidas"><i class="fa fa-circle-o"></i> Menú</a></li>
           </ul>
         </li>
         <li>

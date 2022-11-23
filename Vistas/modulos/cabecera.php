@@ -24,10 +24,10 @@
               <!-- User profile -->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="http://localhost/alquimia/" class="btn btn-primary btn-flat">Mi perfil</a>
+                  <a href="?url=Perfil" class="btn btn-primary btn-flat">Mi perfil</a>
                 </div>
                 <div class="pull-right">
-                  <a href="http://localhost/alquimia/" class="btn btn-danger btn-flat">Cerrar Sesión</a>
+                  <a href="?url=Salir" class="btn btn-danger btn-flat">Cerrar Sesión</a>
                 </div>
               </li>
             </ul>

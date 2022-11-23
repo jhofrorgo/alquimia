@@ -25,7 +25,7 @@ class MesasC{
 
 							if(resultado.value){
 
-								window.location = "Inicio";
+								window.location = "?url=Inicio";
 								
 							}
 
@@ -80,7 +80,7 @@ class MesasC{
 
 				echo '<script>
 
-				window.location = "Inicio";
+				window.location = "?url=Inicio";
 				</script>';
 
 			}
@@ -131,7 +131,7 @@ class MesasC{
 
 							if(resultado.value){
 
-								window.location = "http://localhost/restaurante/Inicio";
+								window.location = "?url=Inicio";
 								
 							}
 

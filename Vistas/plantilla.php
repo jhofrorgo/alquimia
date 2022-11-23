@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="http://localhost/alquimia/Vistas/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="http://localhost/alquimia/Vistas/bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="http://localhost/alquimia/Vistas/select2/css/select2.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -103,5 +104,7 @@
 <script src="http://localhost/alquimia/Vistas/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="http://localhost/alquimia/Vistas/dist/js/demo.js"></script>
+<script src="http://localhost/alquimia/Vistas/sweetalert/sweetalert2.all.js"></script>
+<script src="http://localhost/alquimia/Vistas/select2/js/select2.js"></script>
 </body>
 </html>

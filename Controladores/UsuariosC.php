@@ -99,7 +99,7 @@ class UsuariosC{
 
 							if(resultado.value){
 
-								window.location = "Perfil";
+								window.location = "?url=Perfil";
 								
 							}
 
@@ -153,7 +153,7 @@ class UsuariosC{
 
 							if(resultado.value){
 
-								window.location = "Usuarios";
+								window.location = "?url=Usuarios";
 								
 							}
 
@@ -196,7 +196,7 @@ class UsuariosC{
 
 							if(resultado.value){
 
-								window.location = "Usuarios";
+								window.location = "?url=Usuarios";
 								
 							}
 
@@ -229,7 +229,7 @@ class UsuariosC{
 
 				echo '<script>
 
-				window.location = "Usuarios";
+				window.location = "?url=Usuarios";
 				</script>';
 
 			}
