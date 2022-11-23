@@ -4,7 +4,7 @@ if($_SESSION["rol"] != "Administrador" && $_SESSION["rol"] != "Mesero"){
 
 	echo '<script>
 
-	window.location = "Inicio";
+	window.location = "?url=Inicio";
 	</script>';
 
 	return;
@@ -18,7 +18,7 @@ if($_SESSION["rol"] != "Administrador" && $_SESSION["rol"] != "Mesero"){
 	
 	<section class="content-header">
 		
-		<a href="http://localhost/AtaSoft/Inicio">
+		<a href="?url=Inicio">
 			
 			<button class="btn btn-primary">Volver a Mesas</button>
 
@@ -29,17 +29,16 @@ if($_SESSION["rol"] != "Administrador" && $_SESSION["rol"] != "Mesero"){
 
 		<?php 
 		 
-		$exp = explode("/", $_GET["url"]);
 
-		if(isset($exp[1])){
+		if(isset($_GET["mesa"])){
 
 			$columna = "numero";
-			$valor = $exp[1];
+			$valor = $_GET["mesa"];
 
 			$mesa = MesasC::VerMesas2C($columna, $valor);
 
 			$columna = "id";
-			$valor = $exp[2];
+			$valor = $_GET["orden"];
 
 			$orden = OrdenesC::VerOrdenC($columna, $valor);
 
@@ -49,9 +48,9 @@ if($_SESSION["rol"] != "Administrador" && $_SESSION["rol"] != "Mesero"){
 
 			<h2>Mesero/a: '.$orden["mesero"].'</h2>';
 
-			if(isset($exp[2])){
+			if(isset($_GET["orden"])){
 
-				$id_o = $exp[2];
+				$id_o = $_GET["orden"];
 
 				$Total = OrdenesC::PrecioTotalC($id_o);
 
@@ -77,7 +76,7 @@ if($_SESSION["rol"] != "Administrador" && $_SESSION["rol"] != "Mesero"){
 
 			echo '<input type="hidden" name="id_mesa" value="'.$mesa["id"].'">
 
-			<input type="hidden" name="id_orden" value="'.$exp[2].'">';
+			<input type="hidden" name="id_orden" value="'.$_GET["orden"].'">';
 
 			?>
 			
@@ -119,9 +118,9 @@ if($_SESSION["rol"] != "Administrador" && $_SESSION["rol"] != "Mesero"){
 
 				foreach ($o_pedidos as $key => $value){
 
-					if(isset($exp[2])){
+					if(isset($_GET["orden"])){
 
-						if($value["id_orden"] == $exp[2]){
+						if($value["id_orden"] == $_GET["orden"]){
 
 						echo '<div class="row Pedido">
 					
@@ -161,7 +160,7 @@ if($_SESSION["rol"] != "Administrador" && $_SESSION["rol"] != "Mesero"){
 									
 									<h2>&nbsp;</h2>
 
-									<button type="button" class="btn btn-danger BorrarPedido" MN="'.$exp[1].'" Oid="'.$exp[2].'" Pid="'.$value["id"].'"><i class="fa fa-times"></i></button>
+									<button type="button" class="btn btn-danger BorrarPedido" MN="'.$_GET["mesa"].'" Oid="'.$_GET["orden"].'" Pid="'.$value["id"].'"><i class="fa fa-times"></i></button>
 
 								</div>
 
@@ -267,9 +266,9 @@ if($_SESSION["rol"] != "Administrador" && $_SESSION["rol"] != "Mesero"){
 
 							<?php
 
-							echo '<input type="hidden" class="form-control input-lg" name="n_mesa" value="'.$exp[1].'">
+							echo '<input type="hidden" class="form-control input-lg" name="n_mesa" value="'.$_GET["mesa"].'">
 
-							<input type="hidden" class="form-control input-lg" name="id_o" value="'.$exp[2].'">';
+							<input type="hidden" class="form-control input-lg" name="id_o" value="'.$_GET["orden"].'">';
 
 							?>
 

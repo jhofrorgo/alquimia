@@ -4,17 +4,18 @@ if($_SESSION["rol"] != "Administrador" && $_SESSION["rol"] != "Mesero"){
 
 	echo '<script>
 
-	window.location = "Inicio";
+	window.location = "?url=Inicio";
 	</script>';
 
 	return;
 
 }
 
-$exp = explode("/", $_GET["url"]);
+
+echo $_GET["mesa"];
 
 $columna = "numero";
-$valor = $exp[1];
+$valor = $_GET["mesa"];
 
 $mesa = MesasC::VerMesas2C($columna, $valor);
 
@@ -28,7 +29,7 @@ if($mesa["estado"] == "ocupado"){
 
 	echo '<script>
 
-	window.location = "http://localhost/AtaSoft/Orden/'.$mesa["numero"].'/'.$orden["id"].'";
+	window.location = "?url=Orden&mesa='.$mesa["numero"].'&orden='.$orden["id"].'";
 	</script>';
 
 }
@@ -39,7 +40,7 @@ if($mesa["estado"] == "ocupado"){
 	
 	<section class="content-header">
 		
-		<a href="http://localhost/AtaSoft/Inicio">
+		<a href="?url=Inicio">
 			
 			<button class="btn btn-primary">Volver a Mesas</button>
 

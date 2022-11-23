@@ -2,7 +2,7 @@
 
 class OrdenesC{
 
-	public function CrearOrdenC(){
+	static public function CrearOrdenC(){
 
 		if(isset($_POST["id_mesa"])){
 
@@ -57,7 +57,7 @@ class OrdenesC{
 
 
 
-	public function AgregarPedidoOrdenC(){
+	static public function AgregarPedidoOrdenC(){
 
 		if(isset($_POST["comida"])){
 
@@ -86,7 +86,7 @@ class OrdenesC{
 
 
 
-	public function VerPedidosOrdenC(){
+	static public function VerPedidosOrdenC(){
 
 		$tablaBD = "o_pedidos";
 
@@ -98,7 +98,7 @@ class OrdenesC{
 
 
 
-	public function BorrarPedidoC(){
+	static public function BorrarPedidoC(){
 
 		if(isset($_GET["Pid"])){
 
@@ -140,7 +140,7 @@ class OrdenesC{
 
 
 
-	public function BorrarOrdenC(){
+	static public function BorrarOrdenC(){
 
 		if(isset($_POST["id_orden"])){
 

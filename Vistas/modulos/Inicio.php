@@ -44,7 +44,7 @@
 
 				}
 
-				echo '<a href="http://localhost/AtaSoft/Mesa/'.$value["numero"].'">
+				echo '<a href="?url=Mesa&mesa='.$value["numero"].'">
 					
 					<button class="btn btn-primary">Administrar</button>
 
