@@ -2,7 +2,7 @@
 	
 	<section class="content-header">
 		
-		<h1>Gestor de su Perfil</h1>
+		<h1>Gestione su perfil</h1>
 
 	</section>
 

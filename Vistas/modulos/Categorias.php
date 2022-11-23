@@ -56,7 +56,7 @@ if($_SESSION["rol"] != "Administrador"){
 						<tr>
 							
 							<th>Categoría</th>
-							<th></th>
+							<th>Acciones</th>
 
 						</tr>
 					</thead>
@@ -78,9 +78,9 @@ if($_SESSION["rol"] != "Administrador"){
 
 								<td>
 
-									<button class="btn btn-success EditarCategoria" data-toggle="modal" data-target="#EditarCategoria" Cid="'.$value["id"].'"><i class="fa fa-pencil"></i></button>
+										<button class="btn btn-success EditarCategoria" data-toggle="modal" data-target="#EditarCategoria" Cid="'.$value["id"].'" data-toggle="tooltip" data-html="true" title="Editar usuario"><i class="fa fa-pencil"></i></button>
 
-									<button class="btn btn-danger BorrarCategoria" Cid="'.$value["id"].'"><i class="fa fa-trash"></i></button>
+										<button class="btn btn-danger BorrarCategoria" Cid="'.$value["id"].'" data-toggle="tooltip" data-html="true" title="Eliminar usuario"><i class="fa fa-trash"></i></button>
 
 								</td>
 

@@ -11,18 +11,18 @@ if($_SESSION["rol"] != "Administrador"){
 
 }
 
-$url = explode("/", $_GET["url"]);
-
 ?>
 
 <div class="content-wrapper">
 	
 	<section class="content-header">
 
+	<h1>Modificación de Producto</h1>
+
 		<?php
 
 		$columna = "id";
-		$valor = $url[1];
+		$valor = $_GET["id"];
 
 		$comida = ComidasC::VerComidasC($columna, $valor);
 

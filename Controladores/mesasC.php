@@ -124,7 +124,7 @@ class MesasC{
 
 				swal({
 					type: "success",
-					title: "La Orden ha sido Pagada",
+					title: "La Orden ha sido pagada y la mesa liberada",
 					showConfirmButton: true,
 					confirmButtonText: "Cerrar"					
 					}).then(function(resultado){

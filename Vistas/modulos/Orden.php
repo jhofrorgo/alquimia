@@ -58,7 +58,7 @@ if($_SESSION["rol"] != "Administrador" && $_SESSION["rol"] != "Mesero"){
 
 				$final = explode(" ", $t);
 
-				echo '<h2>Total: $ '.$final[0].'</h2>';
+				echo '<h2>Total cuenta: $ '.$final[0].'</h2>';
 
 			}
 			
@@ -82,7 +82,7 @@ if($_SESSION["rol"] != "Administrador" && $_SESSION["rol"] != "Mesero"){
 			
 			
 
-			<button type="submit" class="btn btn-success pull-right btn-lg">Pagado</button>
+			<button type="submit" class="btn btn-success pull-right btn-lg">Pagar y liberar mesa</button>
 
 
 			<?php
@@ -122,6 +122,8 @@ if($_SESSION["rol"] != "Administrador" && $_SESSION["rol"] != "Mesero"){
 
 						if($value["id_orden"] == $_GET["orden"]){
 
+							$total = $value["cantidad"]*$value["p_total"];
+
 						echo '<div class="row Pedido">
 					
 								<div class="col-md-3">
@@ -144,7 +146,7 @@ if($_SESSION["rol"] != "Administrador" && $_SESSION["rol"] != "Mesero"){
 									
 									<h2>Precio Final</h2>
 
-									<input type="text" class="form-control" readonly value="$ '.$value["p_total"].'">
+									<input type="text" class="form-control" readonly value="$ '.$total.'">
 
 								</div>
 

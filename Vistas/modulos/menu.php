@@ -45,7 +45,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="?url=Categorias"><i class="fa fa-circle-o"></i> Categorías</a></li>
-            <li><a href="?url=Comidas"><i class="fa fa-circle-o"></i> Menú</a></li>
+            <li><a href="?url=Comidas"><i class="fa fa-circle-o"></i> Carta</a></li>
           </ul>
         </li>
         <li>

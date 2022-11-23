@@ -35,15 +35,15 @@ if($_SESSION["rol"] != "Administrador"){
 				
 				<table class="table table-bordered table-hover table-striped">
 					
-					<thead>
+					<thead class="thead-dark">
 						<tr>
-							
-							<th>Apellido</th>
+
+							<th>Apellidos</th>
 							<th>Nombres</th>
 							<th>Usuario</th>
 							<th>Contraseña</th>
 							<th>Rol</th>
-							<th></th>
+							<th>Acciones</th>
 
 						</tr>
 					</thead>
@@ -102,12 +102,14 @@ if($_SESSION["rol"] != "Administrador"){
 	<div class="modal-dialog">
 		
 		<div class="modal-content">
-			
+
 			<form method="post">
 				
 				<div class="modal-body">
 					
 					<div class="box-body">
+
+					
 						
 						<div class="form-group">
 							
@@ -127,14 +129,14 @@ if($_SESSION["rol"] != "Administrador"){
 
 						<div class="form-group">
 							
-							<h2>Apellido:</h2>
+							<h2>Apellidos:</h2>
 							<input type="text" class="form-control input-lg" name="apellido" required="">
 
 						</div>
 
 						<div class="form-group">
 							
-							<h2>Nombre:</h2>
+							<h2>Nombres:</h2>
 							<input type="text" class="form-control input-lg" name="nombre" required="">
 
 						</div>
@@ -149,7 +151,7 @@ if($_SESSION["rol"] != "Administrador"){
 						<div class="form-group">
 							
 							<h2>Contraseña:</h2>
-							<input type="text" class="form-control input-lg" name="clave" required="">
+							<input type="password" class="form-control input-lg" name="clave" required="">
 
 						</div>
 
@@ -237,7 +239,7 @@ if($_SESSION["rol"] != "Administrador"){
 						<div class="form-group">
 							
 							<h2>Contraseña:</h2>
-							<input type="text" class="form-control input-lg" id="clave" name="claveE" required="">
+							<input type="password" class="form-control input-lg" id="clave" name="claveE" required="">
 
 						</div>
 

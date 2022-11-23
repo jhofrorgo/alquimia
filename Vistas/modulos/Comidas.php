@@ -18,11 +18,11 @@ if($_SESSION["rol"] != "Administrador"){
 	
 	<section class="content-header">
 		
-		<h1>Gestor de Comidas</h1>
+		<h1>Gestión de la carta - Comidas y bebidas</h1>
 
 		<br>
 
-		<button class="btn btn-primary" data-toggle="modal" data-target="#CrearComida">Crear Nueva Comida</button>
+		<button class="btn btn-primary" data-toggle="modal" data-target="#CrearComida">Crear un nuevo producto</button>
 
 	</section>
 
@@ -36,13 +36,13 @@ if($_SESSION["rol"] != "Administrador"){
 					
 					<thead>
 						<tr>
-							
+							<th>Id</th>
 							<th>Categoría</th>
 							<th>Nombre</th>
 							<th>Datos</th>
 							<th>Precio</th>
 
-							<th></th>
+							<th>Acciones</th>
 
 						</tr>
 					</thead>
@@ -59,15 +59,15 @@ if($_SESSION["rol"] != "Administrador"){
 						foreach ($resultado as $key => $value) {
 							
 							echo '<tr>
-
+									<td>'.$value["id"].'</td>
 									<td>'.$value["categoria"].'</td>
 									<td>'.$value["nombre"].'</td>
 									<td>'.$value["datos"].'</td>
 									<td>$ '.$value["precio"].'</td>
 
 									<td>
-
-										<a href="Editar-Comida/'.$value["id"].'">
+										
+										<a href="?url=Editar-Comida&id='.$value["id"].'">
 											<button class="btn btn-success"><i class="fa fa-pencil"></i></button>
 										</a>
 										

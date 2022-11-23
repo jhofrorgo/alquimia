@@ -14,7 +14,7 @@ class UsuariosM extends ConexionBD{
 
 		return $pdo -> fetch();
 
-		//$pdo -> close();
+		$pdo -> close();
 
 		$pdo = null;
 
@@ -31,7 +31,7 @@ class UsuariosM extends ConexionBD{
 
 		return $pdo -> fetch();
 
-		//$pdo -> close();
+		$pdo -> close();
 		$pdo = null;
 
 	}
@@ -53,7 +53,7 @@ class UsuariosM extends ConexionBD{
 			return true;
 		}
 
-		//$pdo -> close();
+		$pdo -> close();
 		$pdo = null;
 
 	}
@@ -83,7 +83,7 @@ class UsuariosM extends ConexionBD{
 
 		}
 
-		//$pdo -> close();
+		$pdo -> close();
 		$pdo = null;
 
 	}
@@ -105,7 +105,7 @@ class UsuariosM extends ConexionBD{
 			return true;
 		}
 
-		//$pdo -> close();
+		$pdo -> close();
 		$pdo = null;
 
 	}
@@ -129,7 +129,7 @@ class UsuariosM extends ConexionBD{
 			return true;
 		}
 
-		//$pdo -> close();
+		$pdo -> close();
 		$pdo = null;
 
 	}
@@ -147,7 +147,7 @@ class UsuariosM extends ConexionBD{
 			return true;
 		}
 
-		//$pdo -> close();
+		$pdo -> close();
 		$pdo = null;
 
 	}

@@ -8,6 +8,7 @@
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="http://localhost/alquimia/Vistas/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.8.0/sweetalert2.min.css" rel="stylesheet" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="http://localhost/alquimia/Vistas/bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
@@ -104,7 +105,15 @@
 <script src="http://localhost/alquimia/Vistas/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="http://localhost/alquimia/Vistas/dist/js/demo.js"></script>
-<script src="http://localhost/alquimia/Vistas/sweetalert/sweetalert2.all.js"></script>
+<script src="http://localhost/alquimia/Vistas/sweetalert2/sweetalert2.all.js"></script>
 <script src="http://localhost/alquimia/Vistas/select2/js/select2.js"></script>
+<script src="http://localhost/alquimia/Vistas/js/categorias.js"></script>
+<script src="http://localhost/alquimia/Vistas/js/comidas.js"></script>
+<script src="http://localhost/alquimia/Vistas/js/ordenes.js"></script>
+<script src="http://localhost/alquimia/Vistas/js/usuarios.js"></script>
+<script src="http://localhost/alquimia/Vistas/js/tooltip.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.11/dist/sweetalert2.all.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </body>
 </html>

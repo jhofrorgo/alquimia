@@ -18,7 +18,12 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <span class="hidden-xs">Jhon Ortiz</span>
+
+            <?php
+
+              echo '<span class="hidden-xs">'.$_SESSION["nombre"].' '.$_SESSION["apellido"].'</span>';
+
+            ?>
             </a>
             <ul class="dropdown-menu">
               <!-- User profile -->
