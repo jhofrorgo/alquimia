@@ -39,8 +39,8 @@ $(".table").on("click", ".BorrarUsuario", function(){
 	var Uid = $(this).attr("Uid");
 
 	swal({
-		title: '¿Seguro que desea Borrar este Usuario?',
-		text: "El usuario no tendrá acceso al sistema!",
+		title: '¿Esta acción Eliminará el usurio del sistema, deseas confirmar?',
+		text: "¡El usuario no tendrá acceso al sistema!",
 		type: 'warning',
 		showCancelButton: true,
 		confirmButtonColor: '#3085d6',
@@ -50,13 +50,11 @@ $(".table").on("click", ".BorrarUsuario", function(){
 	}).then(function(resultado){
 
 		if(resultado.value){
-		
-			window.location = "index.php?url=Usuarios&Uid="+Uid;
-
+			//window.location = "index.php?url=Usuarios&Uid="+Uid;
+			window.setTimeout(location = "index.php?url=Usuarios&Uid="+Uid, 3000);
 		}
 
 	})
-
 })
 
 

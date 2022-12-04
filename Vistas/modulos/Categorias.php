@@ -80,6 +80,8 @@ if($_SESSION["rol"] != "Administrador"){
 
 										<button class="btn btn-success EditarCategoria" data-toggle="modal" data-target="#EditarCategoria" Cid="'.$value["id"].'" data-toggle="tooltip" data-html="true" title="Editar usuario"><i class="fa fa-pencil"></i></button>
 
+
+										
 										<button class="btn btn-danger BorrarCategoria" Cid="'.$value["id"].'" data-toggle="tooltip" data-html="true" title="Eliminar usuario"><i class="fa fa-trash"></i></button>
 
 								</td>

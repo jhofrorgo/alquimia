@@ -60,7 +60,7 @@ class UsuariosC{
 
 			</div>
 
-			<div class="col-md-6 col-xs-12">
+			<div class="col-md-6 col-xs-12 edperfil">
 				
 				<h2>Usuario:</h2>
 				<input type="text" name="usuario" class="input-lg" value="'.$resultado["usuario"].'">
@@ -70,7 +70,7 @@ class UsuariosC{
 
 				<br><br>
 
-				<button type="submit" class="btn btn-success input-lg">Guardar Cambios</button>
+				<button type="submit" class="btn btn-success input-lg editarPerfil">Guardar Cambios</button>
 
 			</div>';
 
@@ -80,11 +80,11 @@ class UsuariosC{
 
 	public function EditarPerfilC(){
 
-		if(isset($_POST["idE"])){
+		if(isset($_POST["id"])){
 
 			$tablaBD = "usuarios";
 
-			$datosC = array("id" => $_POST["idE"], "apellido" => $_POST["apellidoE"], "nombre" => $_POST["nombreE"], "usuario" => $_POST["usuarioE"], "clave" => $_POST["claveE"], "rol" => $_POST["rolE"]);
+			$datosC = array("id" => $_POST["id"], "apellido" => $_POST["apellido"], "nombre" => $_POST["nombre"], "usuario" => $_POST["usuario"], "clave" => $_POST["clave"]);
 
 			$resultado = UsuariosM::EditarPerfilM($tablaBD, $datosC);
 
@@ -94,22 +94,8 @@ class UsuariosC{
 				$_SESSION["apellido"] = $_POST["apellido"];
 				
 				echo '<script>
-				
-				swal({
-					type: "success",
-					title: "Correcto",
-					text: "Su Perfil ha sido Editado Correctamente",
-					showConfirmButton: true,
-					confirmButtonText: "Cerrar"					
-					}).then(function(resultado){
 
-							if(resultado.value){
-
-								window.location = "?url=Inicio";
-								
-							}
-
-						})
+					window.location = "?url=Perfil";
 
 				</script>';
 						

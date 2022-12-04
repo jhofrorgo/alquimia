@@ -111,6 +111,7 @@
 <script src="http://localhost/alquimia/Vistas/js/comidas.js"></script>
 <script src="http://localhost/alquimia/Vistas/js/ordenes.js"></script>
 <script src="http://localhost/alquimia/Vistas/js/usuarios.js"></script>
+<script src="http://localhost/alquimia/Vistas/js/perfil.js"></script>
 <script src="http://localhost/alquimia/Vistas/js/tooltip.js"></script>
 <!--<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.11/dist/sweetalert2.all.min.js"></script>-->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>-->
