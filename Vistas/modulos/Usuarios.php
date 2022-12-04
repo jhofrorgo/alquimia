@@ -162,7 +162,7 @@ if($_SESSION["rol"] != "Administrador"){
 
 				<div class="modal-footer">
 					
-					<button class="btn btn-primary" type="submit">Crear</button>
+					<button class="btn btn-primary crearUsuario" type="submit"  onclick="crearUsuario();">Crear</button>
 
 					<button class="btn btn-danger" type="button" data-dismiss="modal">Cancelar</button>
 

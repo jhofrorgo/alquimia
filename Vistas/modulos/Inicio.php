@@ -40,7 +40,7 @@
 
 				}else{
 
-					echo '<h3>Estado: <button class="btn btn-danger">Ocupado</button></h3>';
+					echo '<h3>Estado: <button class="btn btn-danger">Ocupada</button></h3>';
 
 				}
 
@@ -133,3 +133,81 @@ $Borrar = new MesasC();
 $Borrar -> BorrarMesaC();
 
 ?>
+
+
+<div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">  Ultimos pedidos</h3>
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <thead>
+                  <tr>
+                    <th>Id Orden</th>
+                    <th>Producto</th>
+					<th>Mesa</th>
+                    <th>Estado</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td><a href="#">OR9842</a></td>
+                    <td>Fruit Punch</td>
+					<td>1</td>
+                    <td><span class="label label-info">En preparación</span></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">OR1848</a></td>
+                    <td>Papas fritas</td>
+					<td>1</td>
+                    <td><span class="label label-info">En preparación</span></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">OR7429</a></td>
+                    <td>Papas fritas</td>
+					<td>1</td>
+                    <td><span class="label label-danger">Por preparar</span></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">OR7429</a></td>
+                    <td>Fruit Punch</td>
+					<td>2</td>
+                    <td><span class="label label-danger">Por preparar</span></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">OR1848</a></td>
+                    <td>Club Colombia Negra</td>
+					<td>2</td>
+                    <td><span class="label label-warning">Por tomar</span></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">OR7429</a></td>
+                    <td>Club Colombia Negra</td>
+					<td>3</td>
+                    <td><span class="label label-success">Despachado</span></td>
+                  </tr>
+                  <tr>
+                    <td><a href="#">OR9842</a></td>
+                    <td>Fruit Punch</td>
+					<td>5</td>
+                    <td><span class="label label-success">Despachado</span></td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+              <a href="#" class="btn btn-sm btn-default btn-flat pull-right">Visualizar todas las ordenes</a>
+            </div>
+            <!-- /.box-footer -->
+          </div>

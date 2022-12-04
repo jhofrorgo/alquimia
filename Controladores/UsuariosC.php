@@ -1,5 +1,7 @@
 <?php
 
+
+
 class UsuariosC{
 
 	public function IniciarSesionC(){
@@ -144,8 +146,17 @@ class UsuariosC{
 			$resultado = UsuariosM::CrearUsuariosM($tablaBD, $datosC);
 
 			if($resultado == true){
+				//echo '<script language="javascript">alert("Las denominaciones no coinciden con las del cierre de la caja anterior");</script>';
+				
+				echo "<script language='javascript'>
 
-				echo '<script>
+				window.location = '?url=Usuarios';
+
+				</script>";
+
+
+/* 				
+				echo '<script language="javascript">
 
 				swal({
 					type: "success",
@@ -161,10 +172,8 @@ class UsuariosC{
 							}
 
 						})
-
-
 				
-				</script>';
+				</script>'; */
 
 			}
 

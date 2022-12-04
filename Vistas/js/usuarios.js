@@ -40,6 +40,7 @@ $(".table").on("click", ".BorrarUsuario", function(){
 
 	swal({
 		title: '¿Seguro que desea Borrar este Usuario?',
+		text: "El usuario no tendrá acceso al sistema!",
 		type: 'warning',
 		showCancelButton: true,
 		confirmButtonColor: '#3085d6',
@@ -49,8 +50,27 @@ $(".table").on("click", ".BorrarUsuario", function(){
 	}).then(function(resultado){
 
 		if(resultado.value){
-
+		
 			window.location = "index.php?url=Usuarios&Uid="+Uid;
+
+		}
+
+	})
+
+})
+
+
+$(".modal-footer").on("click", ".crearUsuario", function(){
+	swal({
+    type: "success",
+    title: "El Usuario ha sido Creado Correctamente",
+    showConfirmButton: true,
+    confirmButtonText: "Cerrar"					
+    }).then(function(resultado){
+
+		if(resultado.value){
+		
+			window.location = "?url=Usuarios";
 
 		}
 
