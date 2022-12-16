@@ -98,9 +98,9 @@ if($_SESSION["rol"] != "Administrador"){
 
 						
 						<br><br>
-
-						<button class="btn btn-success" type="submit">Guardar Cambios</button>
-
+						<div class="Editar">
+						<button class="btn btn-success EditarComida" type="submit">Guardar Cambios</button>
+						</div>
 						<?php
 
 						$actualizar = new ComidasC();
@@ -119,3 +119,23 @@ if($_SESSION["rol"] != "Administrador"){
 	</section>
 
 </div>
+
+<script>
+	$(".Editar").on("click", ".EditarComida", function(){
+	swal({
+    type: "success",
+    title: "El Usuario ha sido Creado Correctamente",
+    showConfirmButton: true,
+    confirmButtonText: "Cerrar"					
+    }).then(function(resultado){
+
+		if(resultado.value){
+		
+			window.location = "?url=Comidas";
+
+		}
+
+	})
+
+})
+</script>

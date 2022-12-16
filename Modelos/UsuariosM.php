@@ -83,9 +83,6 @@ class UsuariosM extends ConexionBD{
 
 		}
 
-		$pdo -> close();
-		$pdo = null;
-
 	}
 
 

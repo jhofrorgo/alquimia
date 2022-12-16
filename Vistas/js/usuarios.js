@@ -1,14 +1,14 @@
 $(".table").on("click", ".EditarUsuarios", function(){
 
 	var Uid = $(this).attr("Uid");
-
+	console.log("aaaa");
 	var datos = new FormData();
 
 	datos.append("Uid", Uid);
 
 	$.ajax({
 
-		url: "../../Ajax/usuariosA.php",
+		url: "./Ajax/usuariosA.php",
 		method: "POST",
 		data: datos,
 		dataType: "json",
@@ -16,18 +16,15 @@ $(".table").on("click", ".EditarUsuarios", function(){
 		cache: false,
 		processData: false,
 
-		success: function(resultado){
-
+		
+	}).done(function(resultado) {
 			$("#id").val(resultado["id"]);
 			$("#apellido").val(resultado["apellido"]);
 			$("#nombre").val(resultado["nombre"]);
 			$("#usuario").val(resultado["usuario"]);
 			$("#clave").val(resultado["clave"]);
 			$("#rol").val(resultado["rol"]);
-
-		}
-
-	})
+		  })
 
 })
 
@@ -60,7 +57,7 @@ $(".table").on("click", ".BorrarUsuario", function(){
 
 $(".modal-footer").on("click", ".crearUsuario", function(){
 	swal({
-    type: "success",
+    type: "Correcto",
     title: "El Usuario ha sido Creado Correctamente",
     showConfirmButton: true,
     confirmButtonText: "Cerrar"					
@@ -75,3 +72,5 @@ $(".modal-footer").on("click", ".crearUsuario", function(){
 	})
 
 })
+
+

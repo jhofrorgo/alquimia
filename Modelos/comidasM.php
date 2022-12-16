@@ -68,7 +68,7 @@ class ComidasM extends ConexionBD{
 		if($pdo -> execute()){
 			return true;
 		}
-
+		
 		$pdo -> close();
 		$pdo = null;
 

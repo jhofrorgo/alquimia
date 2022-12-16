@@ -118,13 +118,9 @@ if($_SESSION["rol"] != "Administrador"){
 					<div class="form-group">
 						
 						<h2>Categoría:</h2>
+						<input type="hidden" class="form-control input-lg" id="id" name="idE" required="">
 
 						<input type="text" class="input-lg form-control" id="categoria" name="categoriaE" required>
-						<?php
-						echo '<input type="text" name="idE" class="input-lg" value="'.$value["categoria"].'" required="">';
-						?>
-
-						<input type="text" id="id" name="idE">
 
 					</div>
 

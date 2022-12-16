@@ -20,7 +20,6 @@ class UsuariosA{
 
 }
 
-
 if(isset($_POST["Uid"])){
 
 	$EU = new UsuariosA();

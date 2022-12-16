@@ -7,22 +7,19 @@ $(".table").on("click", ".EditarCategoria", function(){
 
 	$.ajax({
 
-		url: "../../Ajax/categoriasA.php",
+		url: "./Ajax/categoriasA.php",
 		method: "POST",
 		data: datos,
 		dataType: "json",
 		contentType: false,
 		cache: false,
-		processData: false,
+		processData: false
 
-		success: function(resultado){
+	}).done(function(resultado) {
 
-			$("#id").val(resultado["id"]);
-			$("#categoria").val(resultado["categoria"]);
-
-		}
-
-	})
+		$("#id").val(resultado["id"]);
+		$("#categoria").val(resultado["categoria"]);
+	  })
 
 })
 
